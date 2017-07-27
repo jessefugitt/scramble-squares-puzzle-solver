@@ -20,7 +20,7 @@ Position 8 is Tile { ID=D, Rotations=3}
 Puzzle solver finished at: 7/24/2017 8:51:53 PM
 ~~~~
 
-### Pruning Puzzle Solver (checks each tile with each placement to see if it is allowed while building board)
+### Pruning Puzzle Solver (checks tile during each placement to see if it is allowed while building board)
 ~~~~
 Puzzle solver started at: 7/26/2017 11:06:35 PM
 Solved puzzle!
