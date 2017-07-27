@@ -35,7 +35,7 @@ namespace ScrambleSquaresPuzzleSolver
         {
             Tile[] puzzleTiles = CreateTiles();
             PuzzleState puzzleState = new PuzzleState(puzzleTiles);
-            PuzzleSolver puzzleSolver = new PuzzleSolver();
+            PuzzleSolver puzzleSolver = new PruningPuzzleSolver();
 
             Console.WriteLine("Puzzle solver started at: " + DateTime.Now);
 

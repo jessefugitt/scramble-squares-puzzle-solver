@@ -6,7 +6,7 @@ namespace ScrambleSquaresPuzzleSolver
 {
     class PuzzleSolver
     {
-        public bool Solve(PuzzleState puzzleState)
+        public virtual bool Solve(PuzzleState puzzleState)
         {
             bool solved  = SolvePosition(puzzleState, 0);
 
@@ -27,7 +27,7 @@ namespace ScrambleSquaresPuzzleSolver
             return solved;
         }
 
-        public bool SolvePosition(PuzzleState puzzleState, int pos)
+        public virtual bool SolvePosition(PuzzleState puzzleState, int pos)
         {
             bool solved = false;
             
@@ -63,8 +63,7 @@ namespace ScrambleSquaresPuzzleSolver
             return solved;
         }
 
-
-        public bool ValidatePuzzle(PuzzleState puzzleState)
+        public virtual bool ValidatePuzzle(PuzzleState puzzleState)
         {
             bool solved =
                 puzzleState.TilesByPosition[0].CurrentRightGraphic.Name == puzzleState.TilesByPosition[1].CurrentLeftGraphic.Name &&
